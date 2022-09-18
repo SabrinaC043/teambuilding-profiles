@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/SabrinaC043/teambuilding-profiles/issues"
   },
-  "homepage": "https://github.com/SabrinaC043/teambuilding-profiles#readme"
+  "homepage": "https://github.com/SabrinaC043/teambuilding-profiles#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
