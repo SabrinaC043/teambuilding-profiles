@@ -2,9 +2,9 @@ const Employee = require('../lib/Employee');
 
 const emp = new Employee('sabrina', 2, 'test@test.com');
 
-describe('name', () => {
+describe('names', () => {
     it('Should return Employee name', () => {
-        expect(emp.name).toBe('sabrina')
+        expect(emp.names).toBe('sabrina')
     })
 
 });
@@ -20,4 +20,6 @@ describe('id', () => {
 describe('email', () => {
     it('Should return email address', () => {
         expect(emp.email).toBe('test@test.com')
-    });
+    })
+});
+
