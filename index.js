@@ -8,14 +8,12 @@ inquirer
 
     type: 'input',
     name: 'names',
-    message: 'What is the Employees name?',
-    // default: "enter full name",
+    message: 'What is your Employees name?',
   },
   {
     type: 'input',
     name: 'email',
     message: 'What is your email address?',
-    // default: "Please enter a valid email address",
   },
   {
     type: 'input',
@@ -42,32 +40,18 @@ inquirer
     // default: "Please enter a school name",
   },
 
+  ])
+  .then((response) => {
+    console.log('response')
+  })
+};
 
-  ]);
 
 // function to write index.html file 
-
-fs.writeFile('index.html', data, (err) => {
-  console.log("Error:", err)
-})
-fs.appendFile('index.html', data, {
-  encoding: 'utf8'
-}, (err) => {
-  console.log("Error:", err)
-})
-
-
-// create a function to kick off 
-// function create() {
-
-//   inquirer.prompt(questions).then((data) => {
-//     writetoFile('index.html', generateHTMLFile(data))
-//   }).catch((error) => {
-//     console.log(error);
-//   });
-// }
-
-// function generateHTMLFile() {
-// };
-
-// create()
+try {
+  fs.writeFileSync('index.html', data, {
+    flag: 'a'
+  })
+} catch (e) {
+  console.log("Error:", e)
+}
