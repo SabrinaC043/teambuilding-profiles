@@ -1,6 +1,6 @@
 const Employee = require('../lib/Employee');
 
-const emp = new Employee('sabrina', 2, 'test@test.com');
+const emp = new Employee('sabrina', 2, 'test@test.com', "Employee");
 
 describe('name', () => {
     it('Should return Employee name', () => {
@@ -23,3 +23,8 @@ describe('email', () => {
     })
 });
 
+describe('role', () => {
+    it('Should return Employee', () => {
+        expect(emp.getRole()).toBe('Employee')
+    })
+});
