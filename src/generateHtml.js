@@ -1,6 +1,9 @@
 function filterTeam(team) {
+  console.log(team)
   team.filter((employee) => employee.getRole() === 'Manager');
+  console.log(team)
   team.filter((employee) => employee.getRole() === 'Engineer');
+  console.log(team)
   team.filter((employee) => employee.getRole() === 'Intern');
 };
 
@@ -30,7 +33,7 @@ function generateHTML(employee) {
 
 
   })
-  console.log(managerCard); //team is not defined 
+  // console.log(managerCard); // cannot read properties of undefined "reading filter"
 
   const engineerC = team.map((item) => {
     return item`
@@ -49,7 +52,7 @@ function generateHTML(employee) {
   </svg><p>${employee.school}</li></p>`
   })
 }
-module.exports = teamArray => {
+module.exports = team => {
 
 
   return `
@@ -74,7 +77,7 @@ module.exports = teamArray => {
         </section>
         <section>
         <div class="container-fluid" style="background-color: darkorchid">
-        ${filterTeam().teamArray}
+        ${filterTeam(team)}
           </div>
    </section>
      </main>
