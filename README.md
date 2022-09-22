@@ -16,7 +16,7 @@ As a manager, I want to generate a webpage that displays my team's basic informa
 So that I can have quick access to their emails and Github profiles
 
 
-## Experience and Learning opportunities
+## Experience and Learning Opportunities
 * This experience overall was amazing because the building process helped to focus on modularization and class/ constructor functions. 
 *Learning Opportunities*
 * refactoring filter in a way that permits singular array outputs instead of multiple. 
