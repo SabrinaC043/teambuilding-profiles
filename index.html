@@ -14,31 +14,36 @@
   </head>
   <body>
     <main>
-      <section style=" color: rgb(87, 86, 88) ; background-color: rgb(199, 183, 208)">
+      <section style=" color: rgb(228, 224, 232) ; background-color: rgb(145, 126, 157)">
         <h1>Team</h1>
       </section>
         <section>
-          <div class="container-fluid" style="background-color: darkorchid">
+          <div class="container-fluid" style="background-color: rgb(110, 87, 121)">
             <div class="card" style="width: 18rem">
               <div
                 class="card-body"
                 style="background-color: rgb(170, 163, 211)"
               >
-                <h5 class="card-title">Employee: for of ${.name}</h5>
+                <h5 class="card-title">Employee:</h5>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
+                  ID: ${employee.id}
+                </li>
+                <div class="card-body">
+                  <div class="card-text">Email:</div>
+                  <a href="#" class="card-link"> ${employee.email}</a>
+                  <div>
+                <li class="list-group-item">
                   Office Number: ${userResponses.officeNumber}
                 </li>
+              </ul>
+              
                 <li class="list-group-item">
                   School: ${userResponses.schoool}
                 </li>
-              </ul>
-              <div class="card-body">
-                <div class="card-text">Email:</div>
-                <a href="#" class="card-link"> ${userResponses.email}</a>
-                <p class="card-text">GitHub Email:</p>
-                <a href="#" class="card-link"> ${userResponses.ghEmail}</a>
+              </div>
+                <a href="#" class="card-link"> GitHub: ${userResponses.ghEmail}</a>
               </div>
             </div>
           </div>
