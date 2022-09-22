@@ -26,3 +26,6 @@ So that I can have quick access to their emails and Github profiles
 ![Image of Employee Card](image.jpg)
 
 ![Image of entire webpage](image.jpg)
+
+##### Video Walkthrough 
+[![Image alt text](https://img.youtube.com/vi/YOUTUBE-ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE-ID)
