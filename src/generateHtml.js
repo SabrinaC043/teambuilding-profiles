@@ -6,8 +6,6 @@ function filterTeam(team) {
   console.log(team)
   team.filter((employee) => employee.getRole() === 'Intern');
 }
-
-
 // filter through team and return cards 
 function generateTeam(team) {
   console.log(team);
@@ -47,7 +45,7 @@ function generateTeam(team) {
   return team.map((employee) => generateEmployeeCard(employee)).join("");
 }
 module.exports = team => {
-  return `
+  return item`
   <!DOCTYPE html>
   <html lang="en">
     <link
@@ -68,12 +66,15 @@ module.exports = team => {
           <h1>Team</h1>
         </section>
         <section>
-        <div class="container-fluid" style="background-color: darkorchid">
-        ${generateTeam(team)}
+         <div class="container-fluid" style="background-color: darkorchid">
+              ${generateTeam(team)}
+              </div>
+              </div>
+            </div>
+            </div>
           </div>
-   </section>
-     </main>
-  </body>
+        </section>
+      </main>
+    </body>
   </html > `}
 
-  // use reduce() to put all the strings together?
