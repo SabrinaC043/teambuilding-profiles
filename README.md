@@ -28,6 +28,6 @@ So that I can have quick access to their emails and Github profiles
 - refactoring filter in a way that permits singular array outputs instead of multiple.
 - testing all of the roles to ensure they pass.
 
-##### Video Walkthrough
+#### Video Walkthrough
 
 [Video of "Employee tracker"](https://youtu.be/HVL37JDZlgI)
